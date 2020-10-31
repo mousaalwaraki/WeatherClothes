@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		411D7DF6254CD20F002C76F6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411D7DF5254CD20F002C76F6 /* WidgetKit.framework */; };
+		411D7DF8254CD20F002C76F6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411D7DF7254CD20F002C76F6 /* SwiftUI.framework */; };
+		411D7DFB254CD20F002C76F6 /* Static_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411D7DFA254CD20F002C76F6 /* Static_Widget.swift */; };
+		411D7DFD254CD213002C76F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 411D7DFC254CD213002C76F6 /* Assets.xcassets */; };
+		411D7E01254CD213002C76F6 /* Static WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 411D7DF3254CD20F002C76F6 /* Static WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		41364A4A2538D7CA00F7E461 /* DetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41364A492538D7CA00F7E461 /* DetailsCollectionViewCell.swift */; };
 		4148B4C825332CF50098F645 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4148B4C725332CF50098F645 /* AppDelegate.swift */; };
 		4148B4CA25332CF50098F645 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4148B4C925332CF50098F645 /* SceneDelegate.swift */; };
@@ -20,7 +25,37 @@
 		41563D332535DC7B00CE9EA5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41563D322535DC7B00CE9EA5 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		411D7DFF254CD213002C76F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4148B4BC25332CF40098F645 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 411D7DF2254CD20F002C76F6;
+			remoteInfo = "Static WidgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		411D7E02254CD213002C76F6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				411D7E01254CD213002C76F6 /* Static WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		411D7DF3254CD20F002C76F6 /* Static WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Static WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		411D7DF5254CD20F002C76F6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		411D7DF7254CD20F002C76F6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		411D7DFA254CD20F002C76F6 /* Static_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Static_Widget.swift; sourceTree = "<group>"; };
+		411D7DFC254CD213002C76F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		411D7DFE254CD213002C76F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41364A492538D7CA00F7E461 /* DetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCollectionViewCell.swift; sourceTree = "<group>"; };
 		4148B4C425332CF50098F645 /* WeatherClothes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherClothes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4148B4C725332CF50098F645 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +72,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		411D7DF0254CD20F002C76F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				411D7DF8254CD20F002C76F6 /* SwiftUI.framework in Frameworks */,
+				411D7DF6254CD20F002C76F6 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4148B4C125332CF50098F645 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,10 +91,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		411D7DF4254CD20F002C76F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				411D7DF5254CD20F002C76F6 /* WidgetKit.framework */,
+				411D7DF7254CD20F002C76F6 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		411D7DF9254CD20F002C76F6 /* Static Widget */ = {
+			isa = PBXGroup;
+			children = (
+				411D7DFA254CD20F002C76F6 /* Static_Widget.swift */,
+				411D7DFC254CD213002C76F6 /* Assets.xcassets */,
+				411D7DFE254CD213002C76F6 /* Info.plist */,
+			);
+			path = "Static Widget";
+			sourceTree = "<group>";
+		};
 		4148B4BB25332CF40098F645 = {
 			isa = PBXGroup;
 			children = (
 				4148B4C625332CF50098F645 /* WeatherClothes */,
+				411D7DF9254CD20F002C76F6 /* Static Widget */,
+				411D7DF4254CD20F002C76F6 /* Frameworks */,
 				4148B4C525332CF50098F645 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				4148B4C425332CF50098F645 /* WeatherClothes.app */,
+				411D7DF3254CD20F002C76F6 /* Static WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +151,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		411D7DF2254CD20F002C76F6 /* Static WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 411D7E05254CD213002C76F6 /* Build configuration list for PBXNativeTarget "Static WidgetExtension" */;
+			buildPhases = (
+				411D7DEF254CD20F002C76F6 /* Sources */,
+				411D7DF0254CD20F002C76F6 /* Frameworks */,
+				411D7DF1254CD20F002C76F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Static WidgetExtension";
+			productName = "Static WidgetExtension";
+			productReference = 411D7DF3254CD20F002C76F6 /* Static WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		4148B4C325332CF50098F645 /* WeatherClothes */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4148B4D825332CF60098F645 /* Build configuration list for PBXNativeTarget "WeatherClothes" */;
@@ -92,10 +175,12 @@
 				4148B4C025332CF50098F645 /* Sources */,
 				4148B4C125332CF50098F645 /* Frameworks */,
 				4148B4C225332CF50098F645 /* Resources */,
+				411D7E02254CD213002C76F6 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				411D7E00254CD213002C76F6 /* PBXTargetDependency */,
 			);
 			name = WeatherClothes;
 			productName = WeatherClothes;
@@ -108,9 +193,12 @@
 		4148B4BC25332CF40098F645 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					411D7DF2254CD20F002C76F6 = {
+						CreatedOnToolsVersion = 12.1;
+					};
 					4148B4C325332CF50098F645 = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
@@ -130,11 +218,20 @@
 			projectRoot = "";
 			targets = (
 				4148B4C325332CF50098F645 /* WeatherClothes */,
+				411D7DF2254CD20F002C76F6 /* Static WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		411D7DF1254CD20F002C76F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				411D7DFD254CD213002C76F6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4148B4C225332CF50098F645 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,6 +245,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		411D7DEF254CD20F002C76F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				411D7DFB254CD20F002C76F6 /* Static_Widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4148B4C025332CF50098F645 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -164,6 +269,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		411D7E00254CD213002C76F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 411D7DF2254CD20F002C76F6 /* Static WidgetExtension */;
+			targetProxy = 411D7DFF254CD213002C76F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4148B4CD25332CF50098F645 /* Main.storyboard */ = {
@@ -185,6 +298,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		411D7E03254CD213002C76F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6K8BWF3CZ2;
+				INFOPLIST_FILE = "Static Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MousaAlwaraki.WeatherClothes.Static-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		411D7E04254CD213002C76F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6K8BWF3CZ2;
+				INFOPLIST_FILE = "Static Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MousaAlwaraki.WeatherClothes.Static-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		4148B4D625332CF60098F645 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -304,6 +461,7 @@
 		4148B4D925332CF60098F645 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -323,6 +481,7 @@
 		4148B4DA25332CF60098F645 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -342,6 +501,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		411D7E05254CD213002C76F6 /* Build configuration list for PBXNativeTarget "Static WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				411D7E03254CD213002C76F6 /* Debug */,
+				411D7E04254CD213002C76F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4148B4BF25332CF40098F645 /* Build configuration list for PBXProject "WeatherClothes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
