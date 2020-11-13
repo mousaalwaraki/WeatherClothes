@@ -14,12 +14,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-//        if UserDefaults.standard.value(forKey: "JacketUserRating") == nil {
+        if UserDefaults.standard.value(forKey: "JacketUserRating") == nil {
             UserDefaults.standard.set(0, forKey: "JacketUserRating")
-//        }
-//        if UserDefaults.standard.value(forKey: "LongSleeveUserRating") == nil {
+        }
+        if UserDefaults.standard.value(forKey: "LongSleeveUserRating") == nil {
             UserDefaults.standard.set(0, forKey: "LongSleeveUserRating")
-//        }
+        }
         return true
     }
 
