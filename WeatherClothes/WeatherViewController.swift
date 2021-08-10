@@ -292,12 +292,12 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate {
         
         rainPercentageLabel.text = "\(highestChanceOfRainHour ?? 0)"
         
-        if celciusDegrees == true {
-            degreesLabel.text = "°C"
-            changeDegreesButton.setTitle("°F", for: .normal)
-        } else {
+        if celciusDegrees == false {
             degreesLabel.text = "°F"
             changeDegreesButton.setTitle("°C", for: .normal)
+        } else {
+            degreesLabel.text = "°C"
+            changeDegreesButton.setTitle("°F", for: .normal)
         }
         
         cityNameLabel.text = "\(location?.name ?? ""), "
